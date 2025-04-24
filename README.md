@@ -59,10 +59,10 @@ python ./GetSubgenome_M3.py <command> [options] [arguments]
 Available Commands
 all - Run complete pipeline (calculation + visualization)
 
-./GetSubgenome_M3.py all [options] <ref_abb> <ref_fasta> <qry_abb> <qry_fasta>
+python ./GetSubgenome_M3.py all [options] <ref_abb> <ref_fasta> <qry_abb> <qry_fasta>
 calculate - Perform calculations only
 
-./GetSubgenome_M3.py calculate [options] <ref_abb> <ref_fasta> <qry_abb> <qry_fasta>
+python ./GetSubgenome_M3.py calculate [options] <ref_abb> <ref_fasta> <qry_abb> <qry_fasta>
 plot - Generate visualization from pre-calculated results
 
 ./GetSubgenome_M3.py plot [options] <data_file>
