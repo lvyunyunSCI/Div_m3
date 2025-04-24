@@ -55,7 +55,7 @@ bash
 chmod +x GetSubgenome_M3.py
 Usage
 Command Structure
-./GetSubgenome_M3.py <command> [options] [arguments]
+python ./GetSubgenome_M3.py <command> [options] [arguments]
 Available Commands
 all - Run complete pipeline (calculation + visualization)
 
@@ -74,30 +74,27 @@ Option	Description	Default
 Examples
 Basic diploid analysis:
 
-bash
-./GetSubgenome_M3.py all HSAP human.fasta OSAT rice.fasta
+python ./GetSubgenome_M3.py all diploid DIPLOID.fasta triploid triploid.fasta
 Tetraploid analysis with 8 threads:
 
-bash
-./GetSubgenome_M3.py all -s 4 -t 8 ATHA arabidopsis.fasta BRRA brassica.fasta
+python ./GetSubgenome_M3.py all -s 4 -t 8 diploid DIPLOID.fasta triploid triploid.fasta
+
 Calculate only (no visualization):
+python ./GetSubgenome_M3.py calculate diploid DIPLOID.fasta triploid triploid.fasta
 
-bash
-./GetSubgenome_M3.py calculate HSAP human.fasta MMUS mouse.fasta
+
 Visualize pre-calculated results:
-
-bash
-./GetSubgenome_M3.py plot HSAP_MMUS_mashDistance.filter.Gadd -o comparison.pdf
+python ./GetSubgenome_M3.py plot diploid_triploid_mashDistance.filter.Gadd -o diploid_triploid_mashDistance.filter.Gadd.pdf
 Output Files
 Calculation Results:
 
-[prefix]_mashDistance - Raw Mash distance results
+diploid_triploid_mashDistance - Raw Mash distance results
 
-[prefix]_mashDistance.filter.Gadd - Processed results with subgenome assignments
+diploid_triploid_mashDistance.filter.Gadd - Processed results with subgenome assignments
 
 Visualization:
 
-[prefix]_mashDistance.filter.Gadd.pdf - Publication-ready PDF visualization
+diploid_triploid_mashDistance.filter.Gadd.pdf - Publication-ready PDF visualization
 
 Advanced Configuration
 Handling Complex Genomes
