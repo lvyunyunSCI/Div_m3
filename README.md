@@ -134,4 +134,5 @@ License
 
 Citation
 If you use this tool in your research, please cite:
-xxx
+Lv Y, Li J, Li Y, Huang Y, Lai Q, Wen Z, Wang J, He Y, Shi J, Huang Z, Jiang Y, de Peer YV, Shi Q, Xie B, Wang Y. Subgenome Partitioning and Polyploid Genome Evolution in the Loach Family Botiidae (Order Cypriniformes). Adv Sci (Weinh). 2025 Jul 7:e05411. doi: 10.1002/advs.202505411
+
